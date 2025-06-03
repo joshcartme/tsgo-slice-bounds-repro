@@ -1,6 +1,5 @@
 import React from "react";
 
-import type { MyWidgetProps } from "@components/widget";
 import type { PassedProps as MyButtonProps } from "@components/button";
 
 export const directoryHeaderConfig = {
@@ -11,5 +10,4 @@ export const directoryHeaderConfig = {
 	},
 };
 
-export type DirectoryConfigType = typeof directoryHeaderConfig &
-	(MyButtonProps | MyWidgetProps);
+export type DirectoryConfigType = typeof directoryHeaderConfig & MyButtonProps;

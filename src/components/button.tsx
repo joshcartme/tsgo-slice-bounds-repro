@@ -6,7 +6,7 @@ import { blahTwoGoIsOn } from 'also/not/real'
 
 import type { BaseButtonData } from 'not/real'
 
-export const fooOptions = [foo.bar] as const;
+export const fooOptions = [baz.bar] as const;
 export interface PassedProps {
     // Component is re-used across spaces / pages
     foo: (typeof fooOptions)[number];
@@ -18,9 +18,7 @@ interface BaseProps extends Props {
     experimentBlahTwoGoIsOn: boolean;
 }
 
-const MyButton = ({ 
-    blah= 0 
-}: Props): React.ReactNode => {
+const MyButton = ({ blah= 0 }: Props): React.ReactNode => {
   return <p>hello</p>;
 }
 

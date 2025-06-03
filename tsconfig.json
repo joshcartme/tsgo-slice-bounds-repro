@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "jsx": "react",
+        "noEmit": true,
         "paths": {
             "@components/*": ["./src/components/*"],
             "@src/*": ["./src/*"]

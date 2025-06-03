@@ -1,25 +1,15 @@
 import React from 'react';
 
-import { Foo } from '@src/types/foo'
+const DEFAULT = 'default';
 
-import { blahTwoGoIsOn } from 'also/not/real'
-
-import type { BaseButtonData } from 'not/real'
-
-export const fooOptions = [baz.bar] as const;
 export interface PassedProps {
-    // Component is re-used across spaces / pages
-    foo: (typeof fooOptions)[number];
+    className?: string;
 }
 
-export type Props = BaseButtonData & PassedProps;
+export type Props = PassedProps;
 
-interface BaseProps extends Props {
-    experimentBlahTwoGoIsOn: boolean;
-}
-
-const MyButton = ({ blah= 0 }: Props): React.ReactNode => {
-  return <p>hello</p>;
+const MyButton = ({ className = DEFAULT }: Props): React.ReactNode => {
+  return <p className={className}>hello</p>;
 }
 
 export default MyButton;

@@ -1,7 +1,9 @@
+import React from 'react';
+
 import type {
     OuterSpaceProps,
     OuterSpaceConfig
-} from '@src/types/store/utility'
+} from '@src/types/store/utility';
 
 type Props = OuterSpaceProps & OuterSpaceConfig;
 

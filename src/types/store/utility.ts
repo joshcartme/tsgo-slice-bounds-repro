@@ -3,7 +3,7 @@ import type { DirectoryConfigType } from "@src/directory-header-config";
 
 export interface OuterSpaceConfig {
 	notifications: {
-		[notificationName: string]: {
+		baz: {
 			component: React.FunctionComponent<any>;
 		};
 	};

@@ -4,7 +4,7 @@ import type { PassedProps as MyButtonProps } from "@components/button";
 
 export const directoryHeaderConfig = {
 	notifications: {
-		foo: {
+		baz: {
 			component: React.lazy(() => import("@components/button")),
 		},
 	},
